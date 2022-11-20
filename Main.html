@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Flight Search</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <nav class="navbar container">
+    <div class="navbar__logo">
+      <h1>FlyHigh</h1>
+    </div>
+    <!-- <img src="logowings.png" alt="Error"> -->
+
+    <div class="navbar__nav">
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="Main.html" class="navbar__link">Home</a></li>
+        <li class="navbar__item"><a href="about.html" class="navbar__link">About</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar__buttons">
+      <a href="Login.html"><button class="login__button btn" id="login-btn">Switch Acc.</button></a>
+    </div>
+  </nav>
+  <body>
+
+    <div id="flight-form">
+      <section>
+        <div class="center" id="flightbox">
+          <form id="flight-form" method="post" action="action.php">
+            <h3>Search Flights</h3>
+            <div id="flight-depart">
+              <div class="info-box">
+                <input
+                  type="text"
+                  name="from"
+                  placeholder="From"
+                  id="dep-from"
+                />
+                <div id="depart-res"></div>
+              </div>
+              <div class="info-box" id="arrive-box">
+                <input
+                  type="text"
+                  name="to"
+                  placeholder="To"
+                  id="dep-to"
+                />
+                <div id="arrive-res"></div>
+              </div>
+            </div>
+
+            <!-- PASSENGER INFO -->
+            <div id="flight-info">
+              <div class="info-box">
+                <label for="adults">Adults</label>
+                <select name="Adults" id="adults" required>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="info-box">
+                <label for="reserve">Senior/Women</label>
+                <select name="reserve" id="reserve" required>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="info-box">
+                <label for="class-type">Cabin Class</label>
+                <select name="class" id="class-type" required>
+                  <option value="Economy">Economy</option>
+                  <option value="Business">Business</option>
+                  <option value="First">First</option>
+                </select>
+              </div>
+
+            </div>
+            <!-- TRIP TYPE -->
+            <div id="flight-type">
+
+              <!-- Calender -->
+            <div class="info-box">
+              <div id="info-box-calender">
+                <label for="class-type">Date</label>
+              <input type="text" id="Ddate" name="date" placeholder="YYYY-MM-DD" required/>
+            </div>
+          </div>
+          </div>
+
+            <!-- SEARCH BUTTON -->
+            <div id="flight-search">
+              <div class="info-box">
+                <input
+                  type="submit"
+                  name="submit-search"
+                  id="search-flight"
+                  value="SEARCH FLIGHTS"/>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+    <!-- <footer class="footer">
+      <ul class="social-icon">
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></li>
+      </ul>
+       <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+      </ul>
+      <p>&copy;2021 Wings | All Rights Reserved</p>
+    </footer> -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</html>

@@ -1,0 +1,50 @@
+.navbar {
+  max-width: 100%;
+  height: 60px;
+  background-color: #151B54;
+  display:flex;
+  justify-content: space-between;
+}
+.navbar .navbar__logo h1 {
+  color: #ffffff;
+  font-size: 30px;
+  margin:14px;
+}
+.navbar .navbar__nav {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar__nav .navbar__menu {
+  list-style: none;
+  display: flex;
+}
+.navbar .navbar__nav .navbar__menu .navbar__item {
+  margin-right: 20px;
+}
+.navbar .navbar__nav .navbar__menu .navbar__item .navbar__link {
+  text-decoration: none;
+  color: white;
+}
+.navbar .navbar__nav .navbar__menu .navbar__item .navbar__link:hover {
+  color:#000;
+}
+.navbar .navbar__buttons {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar__buttons .btn {
+  margin-right: 20px;
+  background-color: #2691d9;
+  color: #ffffff;
+  border: none;
+  font-family: "Poppins";
+  padding: 10px 0;
+  font-size: 15px;
+  border-radius: 15px;
+  min-width: 85px;
+  max-width: 90px;
+}
+.navbar .navbar__buttons .btn:hover {
+  filter: opacity(0.9);
+  cursor: pointer;
+}

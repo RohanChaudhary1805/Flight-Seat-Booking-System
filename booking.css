@@ -1,0 +1,347 @@
+//html, * {
+  box-sizing: border-box;
+  font-size: 16px;
+}//
+
+body {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("3.jpg");
+}
+
+img {
+  max-width: 100%;
+}
+
+.flight-card {
+  width: 805px;
+  height: 420px;
+  border-radius: 35px;
+  margin: 10px auto;
+  overflow: hidden;
+  background-color:#fff;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+.flight-card--header {
+  width: 100%;
+  height: 100px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#264b76+0,002c5f+100 */
+  background: #2691d9;
+  padding: 10px 55px;
+  border-bottom: 7px solid #151b54;
+  position: relative;
+}
+
+.flight-card--header:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 5px;
+  background: #fff;
+  border-radius: 10px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.flight-card--header:after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) translateX(50%);
+}
+
+.flight-card--header-logo {
+  width: 100px;
+  margin: 0 0 -5px 0;
+}
+
+.flight-card--header-details {
+  width: 100%;
+  height: auto;
+  border-top: 3px solid rgba(255,255,255,0.3);
+  color: #151b54;
+}
+
+.details-passenger {
+  width: 50%;
+  float: left;
+}
+
+.details-depart, .details-arrive {
+  width: 25%;
+  float: left;
+}
+
+.detail--title {
+  opacity: 0.5;
+  display: block;
+  margin: 10px 0 0 0;
+}
+
+.detail--text {
+  display: block;
+  margin: 1px 0 0 0;
+}
+
+.flight-card--details {
+  padding: 10px 55px;
+}
+
+.detail-code {
+  color: #151b54;
+  font-size: 50px;
+  display: block;
+  font-weight: 100;
+}
+
+.detail-city {
+  color: #151b54;
+
+}
+
+.bc-from {
+  width: 30%;
+  float: left;
+}
+
+.bc-to {
+  width: 30%;
+  float: right;
+  text-align: right;
+}
+
+.bc-plane {
+  width: 40%;
+  float: left;
+  text-align: center;
+  position: relative;
+  top: -15px;
+}
+
+.bc-plane img {
+  width: 20%;
+
+  margin: 20px auto 0 auto;
+}
+
+.bc-plane:before {
+  content: '';
+  width: 135px;
+  height: 5px;
+  background: #000;
+  position: absolute;
+  top: 40px;
+  left: -50px;
+}
+
+.bc-plane:after {
+  content: '';
+  width: 135px;
+  height: 5px;
+  background: #000;
+  position: absolute;
+  top: 40px;
+  right: -50px;
+}
+
+.flight-card-details--text {
+  width: 100%;
+  padding: 15px 0 0 0;
+  clear: both;
+  overflow: auto;
+}
+
+.text-left {
+  width: 33%;
+  float: left;
+}
+
+.text-middle {
+  width: 33%;
+  float: left;
+  padding: 0 0 0 80px
+}
+
+.mint {
+  position: relative;
+}
+
+.mint:before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  right: 40px;
+  width: 10px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.text-right {
+  width: 33%;
+  float: right;
+  text-align: right;
+}
+
+.text-hline {
+  color: #6a8597;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: 2px;
+}
+
+.text-actual {
+  color: #151b54;
+  padding: 5px 0 0 0;
+  display: block;
+}
+
+.flight-card-details--admin {
+  margin: 10px 0 0 0;
+  color: #151b54;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.admin-left {
+  width: 50%;
+  float: left;
+}
+
+
+.admin-right {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+
+.Menu{
+  z-index: -1;
+  background-image: url("3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100% ;
+  /*height:950px;*/
+}
+.container {
+  padding: 0 20px;
+}
+
+.navbar {
+  max-width: 100%;
+  height: 60px;
+  background-color: #151B54;
+  display:flex;
+  justify-content: space-between;
+}
+.navbar .navbar__logo h1 {
+  color: #ffffff;
+  font-size: 30px;
+  margin:14px;
+}
+.navbar .navbar__nav {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar__nav .navbar__menu {
+  list-style: none;
+  display: flex;
+}
+.navbar .navbar__nav .navbar__menu .navbar__item {
+  margin-right: 20px;
+}
+.navbar .navbar__nav .navbar__menu .navbar__item .navbar__link {
+  text-decoration: none;
+  color: white;
+}
+.navbar .navbar__nav .navbar__menu .navbar__item .navbar__link:hover {
+  color:#000;
+}
+.navbar .navbar__buttons {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar__buttons .btn {
+  margin-right: 20px;
+  background-color: #2691d9;
+  color: #ffffff;
+  border: none;
+  font-family: "Poppins";
+  padding: 10px 0;
+  font-size: 15px;
+  border-radius: 15px;
+  min-width: 85px;
+  max-width: 90px;
+}
+.navbar .navbar__buttons .btn:hover {
+  filter: opacity(0.9);
+  cursor: pointer;
+}
+
+ .footer {
+  position: relative;
+  max-width: 100%;
+  background: #ff3535;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}

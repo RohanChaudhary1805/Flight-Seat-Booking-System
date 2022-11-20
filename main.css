@@ -1,0 +1,325 @@
+.container {
+  padding: 0 20px;
+}
+
+.navbar {
+  max-width: 100%;
+  height: 60px;
+  background-color: #1e90ff;
+  display:flex;
+  justify-content: space-between;
+}
+.navbar .navbar__logo h1 {
+  color: #ffffff;
+  font-size: 30px;
+  margin:14px;
+}
+.navbar .navbar__nav {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar__nav .navbar__menu {
+  list-style: none;
+  display: flex;
+}
+.navbar .navbar__nav .navbar__menu .navbar__item {
+  margin-right: 20px;
+}
+.navbar .navbar__nav .navbar__menu .navbar__item .navbar__link {
+  text-decoration: none;
+  color: white;
+}
+.navbar .navbar__nav .navbar__menu .navbar__item .navbar__link:hover {
+  color:#F71735;
+}
+.navbar .navbar__buttons {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar__buttons .btn {
+  margin-right: 20px;
+  background-color: #4166f5;
+  color: #ffffff;
+  border: none;
+  font-family: "Cursive";
+  padding: 10px 0;
+  font-size: 15px;
+  border-radius: 15px;
+  min-width: 85px;
+  max-width: 90px;
+}
+.navbar .navbar__buttons .btn:hover {
+  filter: opacity(0.9);
+  cursor: pointer;
+}
+.footer {
+  position: relative;
+  width:1520px;
+  margin-top: 600px;
+  background: #2691d9;
+  color:#151b54;
+  /*min-height: 100px;*/
+  left: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+  body {
+    background-image: url("2.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 105%;
+    height: 700px;
+  }
+
+  .center {
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 420px;
+    background: rgba(255, 255, 255, 0.507);
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .center h3 {
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 1px solid silver;
+  }
+  .info-box-calender{
+    align-content: center;
+    width: 120%;
+
+  }
+  .center form {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  #search-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #search-form {
+    border: 1px solid black;
+    width: 65%;
+    position: relative;
+    background-color: #151b54;
+  }
+
+  .flight {
+    padding: 20px;
+  }
+
+  .flight input, select {
+    color: #6B6A6A;
+  }
+
+  .info-box {
+    padding: 10px 0;
+    margin-top: 20px;
+    flex: 1;
+    border-right: 20px solid transparent;
+  }
+
+  .info-box:last-child {
+    border-right: none;
+  }
+
+  .info-box label {
+    display: block;
+    color: #000000;
+    font-size: 0.9em;
+  }
+
+  .info-box > button {
+    margin-top: -2em;
+    margin-right: 3em;
+    white-space: nowrap;
+  }
+
+  .info-box input[type=submit], select {
+    border: none;
+    outline: none;
+    background: #f6eded;
+    margin-top: 5px;
+    width: 100%;
+    padding: -15px;
+    height: 30px;
+    border-radius: 3px;
+  }
+  .info-box input[type=text], select {
+    border: none;
+    outline: none;
+    background: #f6eded;
+    margin-top: 5px;
+    width: 100%;
+    padding: -25px;
+    height: 30px;
+    border-radius: 3px;
+  }
+  .info-box input[type=date], select {
+    border: none;
+    outline: none;
+    background: #f6eded;
+    margin-top: 5px;
+    width: 90%;
+    padding: 5px;
+    height: 30px;
+    border-radius: 3px;
+  }
+
+  input[type=date] {
+    width: 15em;
+    margin-left: 0.7em;
+    margin-top: -1.1em;
+  }
+
+  #flight-type {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px dotted silver;
+  }
+
+  #flight-type .info-box {
+    flex: 0 1 25%;
+    display: flex;
+    align-items: center;
+  }
+
+  #flight-depart {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted silver;
+  }
+
+  #flight-depart .info-box {
+    position: relative;
+  }
+
+  #depart-res, #arrive-res {
+    position: absolute;
+    background: #FFFFFF;
+  }
+
+  #depart-res p, #arrive-res p {
+    padding: 7px 2px;
+    border-bottom: 1px dotted silver;
+  }
+
+  #depart-res p:hover, #arrive-res p:hover {
+    background: #EDEDED;
+    cursor: pointer;
+  }
+
+  #flight-dates {
+    display: flex;
+    border-bottom: 1px dotted silver;
+  }
+
+  #flight-info {
+    display: flex;
+    border-bottom: 1px dotted silver;
+  }
+
+  #flight-search .info-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  #flight-search input[type=submit] {
+    background: #1e90ff;
+    color: white;
+    padding: 0;
+    height: 40px;
+    font-size: 1.2em;
+  }
+
+  #flight-type button {
+    cursor: pointer;
+    outline: none;
+  }
+  #flight-type button.outline {
+    position: relative;
+    z-index: 3;
+    background: transparent;
+    color: #1172c4;
+    font-size: 14px;
+    border-color: #1172c4;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 22px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+  }
+  #flight-type button.outline a {
+    text-decoration: none;
+  }
+  #flight-type button.outline:hover {
+    color: white;
+    background: #151b54;
+    border-color: white;
+    transition: all 0.2s linear;
+  }
+  #flight-type button.outline:active {
+    border-radius: 22px;
+  }
+  #flight-type button.purple-white {
+    font-weight: 700;
+    color: #151b54;
+    border-color: #151b54;
+    background: white;
+  }
+  #flight-type button.purple-white:hover {
+    color: white;
+    background: #151B54;
+    border-color: #151b54;
+  }
